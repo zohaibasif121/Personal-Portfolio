@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Resume from './components/Resume';
+import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
+import Skills from './components/Skills';
+import Meteors from './components/BG';
+import Projects from './components/Projects';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="relative App text-Black bg-gray-300 overflow-hidden">
+       
+        <Meteors />
+        <div className="relative z-10">
+          <Header />
+          <Routes>  
+            <Route path="/" element={<Home />} />
+            <Route path="About" element={<About />} />
+            <Route path="Skills" element={<Skills />} />
+            <Route path="Resume" element={<Resume />} />
+            <Route path="Projects" element={<Projects />} />
+            <Route path="ContactUs" element={<ContactUs />} />
+          </Routes>
+          <Footer />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
