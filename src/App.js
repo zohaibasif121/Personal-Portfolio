@@ -13,9 +13,12 @@ import Projects from './components/Projects';
 class App extends Component {
   render() {
     return (
-      <div className="relative App text-Black bg-gray-300 overflow-hidden">
-       
-        <Meteors />
+      <div className="relative App text-black bg-gray-300 overflow-hidden">
+
+        <div className="absolute inset-0 z-0">
+          <Meteors />
+        </div>
+
         <div className="relative z-10">
           <Header />
           <Routes>  
@@ -34,3 +37,4 @@ class App extends Component {
 }
 
 export default App;
+
