@@ -25,15 +25,15 @@ function Header() {
   return (
     <header className="p-5 ">
       <nav 
-      className='flex justify-between items-start  px-10 md:justify-around  p-2 backdrop-blur-2xl bg-white/10 border-b border-white/10 shadow-lg '>
+      className='flex justify-between items-start  px-10 md:justify-around  p-2 backdrop-blur-2xl bg-black border-b border-white/10 shadow-lg '>
         <div className={` font-bold flex items-start  space-x-2 ${isMenuOpen ? 'absolute left-4 ' : ''}`}>
-          <img src={LOGO} alt="Logo" className="h-8 w-8" />
-          <p>Zohaib</p>
+          <img src={LOGO} alt="Logo" className="h-8 w-8 " />
+          <p className='text-white'>Zohaib Asif</p>
         </div>
 
         <div className="absolute right-2 md:hidden">
           <button onClick={toggleMenu}>
-            <img src={Menu} alt="menu" className="h-8 w-8" />
+            <img src={Menu} alt="menu" className="h-8 w-8 invert" />
           </button>
         </div>
 
@@ -44,7 +44,7 @@ function Header() {
                 <NavLink
                   to={obj.link}
                   className={({ isActive }) =>
-                    isActive ? 'text-black font-bold text-md' : 'text-white hover:text-black'
+                    isActive ? 'text-cyan-500 font-bold text-md' : 'text-white hover:text-black'
                   }
                 >
                   {obj.name}
