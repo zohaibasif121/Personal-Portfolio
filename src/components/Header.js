@@ -44,7 +44,7 @@ function Header() {
                 <NavLink
                   to={obj.link}
                   className={({ isActive }) =>
-                    isActive ? 'text-cyan-500 font-bold text-md' : 'text-white hover:text-black'
+                    isActive ? 'text-cyan-500 font-bold text-md' : 'text-white hover:font-bold'
                   }
                 >
                   {obj.name}
