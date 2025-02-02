@@ -26,11 +26,7 @@ function Home() {
       logo:twitter
     },
   ];
-  const Image=(
-    <div>
-    <img src={Zohaib} alt="Zohaib Asif" className="rounded size-80 object-cover drop-shadow-2xl" />
-  </div>
-  )
+
 
   return (
     <div className="  flex flex-col-reverse text-start h-screen md:h-full  gap-10  md:flex-row items-center justify-evenly min-h-96 ">
@@ -66,11 +62,9 @@ function Home() {
         </div>
       </div>
             
-      <Title
-           
-          text={Image}   
-          direction='down'
-          />
+     <div>
+    <img src={Zohaib} alt="Zohaib Asif" className="rounded size-80 object-cover drop-shadow-2xl" />
+  </div>
 
      
     </div>
