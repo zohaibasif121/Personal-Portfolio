@@ -5,7 +5,7 @@ import Title from './Title';
 const About = () => {
   const aboutDetails = (
     <p>
-      I am currently a student at The NCBA&E pursuing my BSCS from here. I am a self-taught Frontend Web Developer, currently diving deeper into it. My goal is to learn something new every day. I believe that<br /><br />
+      I am currently a student at The NCBA&E pursuing my BSCS from here. I am a self-taught Merrn Stack Developer, currently diving deeper into it. My goal is to learn something new every day. I believe that<br /><br />
       <q className="text-center">to be successful in life, one needs to be obsessive with their dreams and keep working towards them.</q>
     </p>
   );

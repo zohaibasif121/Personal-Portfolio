@@ -26,7 +26,7 @@
                 this.socialLinks.map((item)=>{
                   return(
                     <li key={item.className} >
-                      <a href={item.url} target='_blank' rel='noreferrer' className=' hover:font-bold hover:text-blue-400 focus:text-blue-400'>
+                      <a href={item.url} target='_blank' rel='noreferrer' className='  hover:text-blue-400 focus:text-blue-400'>
                       <i >{item.name}</i>
                       </a>
                     </li>

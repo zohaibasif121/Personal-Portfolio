@@ -22,7 +22,7 @@ function ContactUs() {
           },
           {
           name: "Instagram",
-          url: "https://www.instagram.com/zohaib_asif_18?igsh=NXZsazJpbW8wdDQ5",
+          url: "https://www.instagram.com/zohaibasif234?igsh=aDZ0eDBweGI2ejEy",
           className: "fa fa-linkedin",
           logo:Instagram,
           

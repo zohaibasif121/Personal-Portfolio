@@ -1,7 +1,7 @@
 import React from 'react'
-import CV1 from './Images/cv-1.png'
-import CV2 from './Images/cv-2.png'
-import CV from './asserts/ZOHAIB ASIF Resume .pdf';
+import CV1 from './Images/zohaib cv.png'
+// import CV2 from './Images/cv-2.png'
+import CV from './asserts/ZOHAIB ASIF Resume _3.pdf';
 
 function Resume() {
   return (
@@ -12,7 +12,6 @@ function Resume() {
       </div>
       <div className='mb-0'>
       <img src={CV1} alt='cv' className='w-1/2 md:w-full md:px-60 mx-auto ' />
-      <img src={CV2} alt='cv' className='w-1/2 md:w-full md:px-60 mx-auto '/>
     </div>
     </div>
   )

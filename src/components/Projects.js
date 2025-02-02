@@ -3,6 +3,19 @@ import React from 'react';
 function Projects() {
   const projects = [
     {
+      id: 6,
+      img: `https://i.postimg.cc/05VLwzd9/Whats-App-Image-2025-01-18-at-9-50-39-AM-removebg-preview.png`,
+      url: 'http://mkbeautyhub.com/',
+      Title: 'Mk Beauty Hub',
+      
+    },
+    {
+      id: 4,
+      img: `https://i.postimg.cc/T2WTfr1t/hitack.png`,
+      url: 'https://hitackeng.netlify.app/',
+      Title: 'Hi Tack Eng',
+    },
+    {
       id: 1,
       img: `https://d33wubrfki0l68.cloudfront.net/66d21a11d89cc90008d7d189/screenshot_2024-08-30-19-14-44-0000.webp`,
       url: 'https://currency-converter-by-zohaib-asif.netlify.app/',
@@ -20,24 +33,14 @@ function Projects() {
       url: 'https://weather-app-by-zohaib-asif.netlify.app/',
       Title: 'Weather App',
     },
-    {
-      id: 4,
-      img: `https://d33wubrfki0l68.cloudfront.net/66d1bf44a0b95d0008743f56/screenshot_2024-08-30-12-47-41-0000.webp`,
-      url: 'https://stop-watch-by-zohaib-asif.netlify.app/',
-      Title: 'Stpo Watch',
-    },
+    
     {
       id: 5,
       img: `https://d33wubrfki0l68.cloudfront.net/66d0dea9a0b95d0008dd15a0/screenshot_2024-08-29-20-49-31-0000.webp`,
       url: 'https://tic-tac-toe-by-zohaib-asif.netlify.app/',
       Title: 'Tic Tac Toe Game',
     },
-    {
-      id: 6,
-      img: `https://d33wubrfki0l68.cloudfront.net/66d1c9e8b0a5d10008fb1db8/screenshot_2024-08-30-13-33-05-0000.webp`,
-      url: 'https://todo-list-by-zohaib.netlify.app/',
-      Title: 'TODO List',
-    },
+    
   ];
 
   return (
@@ -51,7 +54,9 @@ function Projects() {
             <div className='border-2 h-1/4 text-center text-lg font-bold'>
               {obj.Title}
             </div>
-          <img src={obj.img} className='w-72 h-32' alt={obj.Title}/>
+            <div className='flex justify-center'>
+          <img src={obj.img} className=' h-32' alt={obj.Title}/>
+          </div>
           </a>
         </div>
       ))}

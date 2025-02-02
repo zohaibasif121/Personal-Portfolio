@@ -44,7 +44,7 @@ function Home() {
                     
           <Title 
           text="I am a Frontend Developer. 
-          I like dabbling in various parts of frontend development and 
+          I like dabbling in various parts of mern stack development and 
           enjoy learning about new technologies or simply listening to music in my free time."
           direction='up'
           className='mt-3'
